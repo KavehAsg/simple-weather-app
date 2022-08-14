@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);
+    background: linear-gradient(to left, #4A00E0, #8E2DE2);
+}
+
+header {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+form {
+    height: 30px;
+    margin: 30px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form input {
+    width: 300px;
+    height: 30px;
+    background: inherit;
+    border: none;
+    outline: none;
+    border-bottom: solid #000 1px;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+form input::placeholder {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+form button {
+    background: #b39ddb;
+    border: none;
+    width: 100px;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+form button:hover {
+    border-radius: 10px;
+}
+
+.error-msg {
+    color: #f06292;
+}
+
+main {
+    margin: 20px 0;
+    padding: 0 100px;
+}
+
+.display {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure img {
+    width: 100px;
+}
+
+.container {
+    width: 170px;
+    height: 220px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px 15px 5px;
+    position: relative;
+    /* color: #fff; */
+}
+
+.container::before {
+    content: '';
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    bottom: -8px;
+    right: 5px;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 20px;
+    background: inherit;
+}
+
+.city-geo {
+    margin-bottom: 10px;
+}
+
+.city-name {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.country-name {
+    background: #f3d345c0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.temp {
+    font-size: 1.3rem;
+}
+
+.metric {
+    position: relative;
+    top: -5px;
+}
